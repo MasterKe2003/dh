@@ -185,6 +185,35 @@
         #logo {
             transition: transform 1s ease;
         }
+
+        /* 手机和小屏设备 */
+        @media (max-width: 600px) {
+            .icon {
+                width: 50px;
+                height: 50px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 12px;
+            }
+
+            .icon circle {
+                cx: 25px;
+                cy: 25px;
+                r: 20px;
+            }
+
+            .icon image {
+                x: 15px;
+                y: 15px;
+                width: 20px;
+                height: 20px;
+            }
+        }
     </style>
     <div class="glass-container">
         <div class="about">
@@ -206,32 +235,32 @@
             <div class="socials">
                 <table>
                     <tr>
-                        <td><a href="https://resume.masterke.cn"><svg width="100" height="100">
+                        <td><a href="https://resume.masterke.cn"><svg class="icon" width="100" height="100">
                                     <circle cx="50" cy="50" r="40" fill="#0066ff" />
                                     <image href="images/resume.svg" x="30" y="30" width="40" height="40">
                                 </svg></a></td>
-                        <td> <a href="https://chat.masterke.cn"><svg width="100" height="100">
+                        <td> <a href="https://chat.masterke.cn"><svg class="icon" width="100" height="100">
                                     <circle cx="50" cy="50" r="40" fill="#7cba59" />
                                     <image href="images/chat.svg" x="30" y="30" width="40" height="40">
                                 </svg> </a></td>
-                        <td><a href="https://cloud.masterke.cn"><svg width="100" height="100">
+                        <td><a href="https://cloud.masterke.cn"><svg class="icon" width="100" height="100">
                                     <circle cx="50" cy="50" r="40" fill="#00acee" />
                                     <image href="images/cloud.svg" x="30" y="30" width="40" height="40">
                                 </svg></a></td>
                     </tr>
                     <tr>
-                        <td><a href="https://love.masterke.cn"><svg width="100" height="100">
+                        <td><a href="https://love.masterke.cn"><svg class="icon" width="100" height="100">
                                     <circle cx="50" cy="50" r="40" fill="#FB7299" />
                                     <image href="images/love.svg" x="30" y="30" width="40" height="40">
                                 </svg></a></td>
-                        <td><a href="https://github.com/MasterKeee"><svg width="100" height="100">
-                                <circle cx="50" cy="50" r="40" fill="#32201C" />
-                                <image href="images/github.svg" x="30" y="30" width="40" height="40">
-                            </svg></a></td>
-                        <td><a href="mailto:masterke@icloud.com"><svg width="100" height="100">
-                                <circle cx="50" cy="50" r="40" fill="#ff8000" />
-                                <image href="images/email.svg" x="30" y="30" width="40" height="40">
-                            </svg></a></td>
+                        <td><a href="https://github.com/MasterKeee"><svg class="icon" width="100" height="100">
+                                    <circle cx="50" cy="50" r="40" fill="#32201C" />
+                                    <image href="images/github.svg" x="30" y="30" width="40" height="40">
+                                </svg></a></td>
+                        <td><a href="mailto:masterke@icloud.com"><svg class="icon" width="100" height="100">
+                                    <circle cx="50" cy="50" r="40" fill="#ff8000" />
+                                    <image href="images/email.svg" x="30" y="30" width="40" height="40">
+                                </svg></a></td>
                     </tr>
                 </table>
                 <script>var logo = document.getElementById("logo");
@@ -249,12 +278,13 @@
             </div>
         </div>
     </div>
-    <div id="master" >
+    <div id="master">
 
-     
-        <a href="http://beian.miit.gov.cn/" style="color: aliceblue; text-decoration:none;position:absolute; left:50%;bottom:0;text-align :center; transform: translateX(-50%);">皖ICP备2024031200号</a>
-    
-     </div>
+
+        <a href="http://beian.miit.gov.cn/"
+            style="color: aliceblue; text-decoration:none;position:absolute; left:50%;bottom:0;text-align :center; transform: translateX(-50%);">皖ICP备2024031200号</a>
+
+    </div>
 
 </body>
 
