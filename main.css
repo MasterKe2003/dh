@@ -581,3 +581,40 @@ video {
     left: calc(50% - 24rem);
   }
 }
+
+
+.icons-container {
+  display: flex;
+  flex-wrap: wrap; /* 允许图标在容器内换行 */
+  justify-content: center; /* 居中对齐图标 */
+  gap: 20px; /* 设置图标之间的间距 */
+}
+
+.icon {
+  width: 60px; /* 根据实际情况调整图标的大小 */
+  height: 60px; /* 根据实际情况调整图标的大小 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 默认情况下每行显示4个图标 */
+.icons-container .icon {
+  flex: 1 1 calc(25% - 20px); /* 每个图标占25%的宽度，减去间距 */
+}
+
+/* 媒体查询，当屏幕宽度小于或等于600px时应用 */
+@media (max-width: 600px) {
+  /* 每行显示2个图标 */
+  .icons-container .icon {
+      flex: 1 1 calc(50% - 20px); /* 每个图标占50%的宽度，减去间距 */
+  }
+}
+
+/* 媒体查询，当屏幕宽度小于或等于400px时应用 */
+@media (max-width: 400px) {
+  /* 每行显示1个图标 */
+  .icons-container .icon {
+      flex: 1 1 100%; /* 每个图标占100%的宽度 */
+  }
+}
