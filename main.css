@@ -582,7 +582,6 @@ video {
   }
 }
 
-
 .icons-container {
   display: flex;
   flex-wrap: wrap; /* 允许图标在容器内换行 */
@@ -607,14 +606,46 @@ video {
 @media (max-width: 600px) {
   /* 每行显示2个图标 */
   .icons-container .icon {
-      flex: 1 1 calc(50% - 20px); /* 每个图标占50%的宽度，减去间距 */
+    flex: 1 1 calc(50% - 20px); /* 每个图标占50%的宽度，减去间距 */
   }
+  .w-60 {
+    width: auto;
+  }
+  .h-60 {
+    height: auto;
+  }
+  img,
+  video {
+    max-width: 40%;
+    height: auto
+    ;
+  }
+  body > div.bg-gray-900 > header > div > div.h-screen.w-screen.grid.items-center > div > h2 {
+    font-size: 1.85rem;
+  }
+  .text-4xl {
+    font-size: 2rem;
+  }
+  
+  .mx-5 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  a {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: currentColor;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+  
 }
 
 /* 媒体查询，当屏幕宽度小于或等于400px时应用 */
 @media (max-width: 400px) {
   /* 每行显示1个图标 */
   .icons-container .icon {
-      flex: 1 1 100%; /* 每个图标占100%的宽度 */
+    flex: 1 1 100%; /* 每个图标占100%的宽度 */
   }
 }
