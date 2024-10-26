@@ -635,7 +635,7 @@ video {
   a {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: currentColor;
+    /* background-color: currentColor; */
     border-radius: 50%;
     text-decoration: none;
   }
