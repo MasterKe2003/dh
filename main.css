@@ -649,3 +649,8 @@ video {
     flex: 1 1 100%; /* 每个图标占100%的宽度 */
   }
 }
+
+#VOCECHAT_WIDGET {
+  right: 5px;  /* left position */
+  bottom: 5px; /* bottom position */
+}
